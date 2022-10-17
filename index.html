@@ -34,7 +34,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '2531423257';
+    var serviceWorkerVersion = '2281782029';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -53,6 +53,21 @@
         return appRunner.runApp();
       });
     });
+  </script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyCNTvdxVuf4lf5Mp1XyX78XZPwbdjH5kBw",
+      authDomain: "moneysend-78c40.firebaseapp.com",
+      projectId: "moneysend-78c40",
+      storageBucket: "moneysend-78c40.appspot.com",
+      messagingSenderId: "686918447315",
+      appId: "1:686918447315:web:6208b399ef18bd24a0a426"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
   </script>
 </body>
 </html>
